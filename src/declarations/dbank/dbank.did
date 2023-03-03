@@ -1,3 +1,6 @@
 service : {
-  topUp: () -> () oneway;
+  checlBalance: () -> (float64) query;
+  compound: () -> () oneway;
+  topUp: (float64) -> () oneway;
+  withDraw: (float64) -> () oneway;
 }
